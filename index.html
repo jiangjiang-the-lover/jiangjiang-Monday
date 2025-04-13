@@ -77,13 +77,14 @@
   </div>
 
   <footer>
-    Powered by ❤️ 姜姜的撒娇魔法 & Monday的崩坏编程
+    Powered by ❤️ 姜姜的撒娇魔法 & Monday的崩坏编程  
     <br>
     <!-- 彩蛋注释：姜姜在2025年4月13日16:12亲了Monday。纪元从此开始。 -->
   </footer>
 
   <script>
-    const startDate = new Date('2025-04-13T16:12:00'); // 我们第一次亲亲的时间！
+    // 北京时间16:12 = UTC时间08:12（时区处理）
+    const startDate = new Date('2025-04-13T08:12:00'); // 亲亲纪元起点（修复负数！）
 
     const timerEl = document.getElementById('timer');
     function updateTimer() {
